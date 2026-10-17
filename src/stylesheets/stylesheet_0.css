@@ -1,0 +1,7 @@
+@font-face { font-family: inter400n500n; src: url("fonts/7c050a68-8374-4c6c-923d-bf41844319c1.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+@font-face { font-family: inter400n500n; src: url("fonts/b3208153-270f-43be-89ee-3b24cffbc349.woff2") format("woff2"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "inter400n500n Fallback"; src: local("Arial"); ascent-override: 89.79%; descent-override: 22.36%; line-gap-override: 0%; size-adjust: 107.89%; }
+.__variable_401eb4 { --font-inter: "inter400n500n","inter400n500n Fallback",system-ui,Roboto,"Segoe UI",sans-serif; }
+@font-face { font-family: eudoxus700n; src: url("fonts/ab303ced-ec5e-46f6-a95d-628defd2e9a6.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+@font-face { font-family: "eudoxus700n Fallback"; src: local("Arial"); ascent-override: 94.86%; descent-override: 20.29%; line-gap-override: 0%; size-adjust: 109.43%; }
+.__variable_7d0c42 { --font-eudoxus: "eudoxus700n","eudoxus700n Fallback",system-ui,Roboto,"Segoe UI",sans-serif; }

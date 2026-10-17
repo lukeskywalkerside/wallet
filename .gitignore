@@ -1,0 +1,8 @@
+node_modules/
+dist/
+
+.opencode-session/
+.env
+.env.*
+!.env.example
+

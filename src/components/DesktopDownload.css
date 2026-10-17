@@ -1,0 +1,17 @@
+.desktop-download { position:relative; z-index:5; width:372px; max-width:100%; font-family:Arial,sans-serif; }
+.desktop-download-trigger { display:flex; align-items:center; justify-content:space-between; gap:16px; width:100%; min-height:56px; padding:14px 20px; border:0; border-radius:999px; background:white; color:#101014; font-size:18px; font-weight:500; cursor:pointer; }
+.desktop-download-trigger > span { display:flex; align-items:center; justify-content:center; flex:1; gap:10px; }
+.desktop-download-trigger > svg { flex-shrink:0; transition:transform .18s; }
+.desktop-download-options { position:absolute; top:calc(100% + 16px); left:50%; transform:translateX(-50%); width:342px; max-width:100%; padding:8px; border-radius:12px; background:#fff; color:#101014; box-shadow:0 12px 40px #0004; text-align:left; }
+.desktop-download-options::before { content:''; position:absolute; top:-7px; left:calc(50% - 8px); width:16px; height:16px; background:white; border-radius:4px 0 0; transform:rotate(45deg); }
+.desktop-download-options ul { list-style:none; padding:0; margin:0; position:relative; }
+.desktop-download-options li a { display:flex; align-items:center; gap:12px; min-height:64px; padding:8px; border-radius:8px; color:#101014; text-decoration:none; font-size:16px; line-height:22px; }
+.desktop-download-options li a:hover { background:#f1edff; }
+.desktop-platform-icon { display:flex; align-items:center; justify-content:center; flex:0 0 44px; height:44px; background:#30303f; color:white; border-radius:50%; }
+.desktop-download-options p { padding:12px 8px 8px; margin:0; color:#6f6e73; font-size:11px; line-height:17px; }
+.desktop-download-options p a { color:inherit; text-decoration:underline; }
+.desktop-download-trigger:focus-visible, .desktop-download-options a:focus-visible { outline:2px solid #8161ff; outline-offset:3px; }
+@media (max-width:480px) { .desktop-download-trigger { font-size:16px; } .desktop-download-options li a { font-size:14px; } }
+
+.desktop-download-trigger img { filter:brightness(0); }
+

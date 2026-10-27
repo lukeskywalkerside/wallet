@@ -1,10 +1,9 @@
 import React from 'react'
 import DesktopDownload from '../components/DesktopDownload.tsx'
+import { WEB_APP_SIGN_IN } from '../downloads.ts'
 import { ArrowRight, ShieldCheck, ScanFace, LifeBuoy, ArrowDownToLine, Heart, Bitcoin, Star } from 'lucide-react'
 import { Btn, ExodusMark, H2, Lead, Lines, Tag, Faq, Card, IMG, SectionHead, AssetsBlock } from './ui.tsx'
 
-const APP_STORE = 'https://apps.apple.com/app/apple-store/id1414384820?pt=118366236&ct=download&mt=8'
-const PLAY_STORE = 'https://play.google.com/store/apps/details?id=exodusmovement.exodus&referrer=utm_source%3Dexodus-website%26utm_campaign%3DExodus_Pay_Home%26utm_content%3DExodus_Pay_Home'
 
 function Legal() {
     return <p className="text-xs text-white/48"><a className="underline" href="/terms">Terms</a> &amp; <a className="underline" href="/privacy">Privacy</a> apply</p>
@@ -13,11 +12,11 @@ function Legal() {
 function Stores({ dark }: { dark?: boolean }) {
     return (
         <div className="flex flex-wrap items-center justify-center gap-3">
-            <a href={APP_STORE} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-white/16 bg-black px-4 py-2 no-underline">
+            <a href={WEB_APP_SIGN_IN} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-white/16 bg-black px-4 py-2 no-underline">
                 <span className="text-2xl"></span>
                 <span className="flex flex-col text-left leading-tight"><span className="text-[10px] text-white/64">Download on the</span><span className="text-base font-semibold">App Store</span></span>
             </a>
-            <a href={PLAY_STORE} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-white/16 bg-black px-4 py-2 no-underline">
+            <a href={WEB_APP_SIGN_IN} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-white/16 bg-black px-4 py-2 no-underline">
                 <span className="text-xl">▶</span>
                 <span className="flex flex-col text-left leading-tight"><span className="text-[10px] text-white/64">GET IT ON</span><span className="text-base font-semibold">Google Play</span></span>
             </a>

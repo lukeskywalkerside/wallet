@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import DesktopDownload from '../components/DesktopDownload.tsx'
+import { WEB_APP_SIGN_IN } from '../downloads.ts'
 import {
     Btn, ExodusMark, Hero, TrustBar, Showcase, AssetsBlock, AllDevices, Faq, Banner, Bento, Steps,
     SectionHead, WatchVideo, Tag, H2, Lead, Lines, Card, IMG, gradientBg,
@@ -38,8 +39,8 @@ export function MobilePage() {
                 <H2><Lines text={'Portfolio management\nthat moves with you'} /></H2>
                 <Lead>for iOS and Android: swap, buy and sell, stake and earn.</Lead>
                 <div className="flex flex-col gap-4 sm:flex-row">
-                    <StoreBadge store="App Store" sub="Download on the" rating="4.7" reviews="118k" href="https://apps.apple.com/app/apple-store/id1414384820?pt=118366236&ct=download&mt=8" />
-                    <StoreBadge store="Google Play" sub="GET IT ON" rating="4.6" reviews="25k" href="https://play.google.com/store/apps/details?id=exodusmovement.exodus&referrer=utm_source%3Dexodus-website%26utm_campaign%3DMobile%26utm_content%3DMobile" />
+                    <StoreBadge store="App Store" sub="Download on the" rating="4.7" reviews="118k" href={WEB_APP_SIGN_IN} />
+                    <StoreBadge store="Google Play" sub="GET IT ON" rating="4.6" reviews="25k" href={WEB_APP_SIGN_IN} />
                 </div>
             </section>
 

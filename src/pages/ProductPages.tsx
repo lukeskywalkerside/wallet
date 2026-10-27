@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+import DesktopDownload from '../components/DesktopDownload.tsx'
 import {
     Btn, ExodusMark, Hero, TrustBar, Showcase, AssetsBlock, AllDevices, Faq, Banner, Bento, Steps,
     SectionHead, WatchVideo, Tag, H2, Lead, Lines, Card, IMG, gradientBg,
@@ -88,8 +89,7 @@ export function DesktopPage() {
             <section className="container-xl mx-auto flex max-w-screen-xl flex-col items-center gap-8 px-4 py-20 text-center">
                 <H2><Lines text={'Exodus gives you a way to secure,\nmanage, and swap your blockchain\nassets in one beautiful application'} /></H2>
                 <div className="flex flex-col gap-4 sm:flex-row">
-                    <Btn href="https://downloads.exodus.com/releases/exodus-macos-26.10.7.dmg" external>Download for macOS</Btn>
-                    <Btn href="https://szrpjxbkcgclaozplzyw.supabase.co/storage/v1/object/public/app-releases/windows/exodus-windows-x64.exe" external variant="outline">Download for Windows</Btn>
+                    <DesktopDownload />
                 </div>
                 <p className="text-xs text-white/48">By downloading Exodus, you agree to the <a href="/terms" className="underline">Terms of Service</a> and <a href="/privacy" className="underline">Privacy Policy</a></p>
             </section>

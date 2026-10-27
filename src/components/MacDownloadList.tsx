@@ -3,6 +3,7 @@ import type { JSX } from 'react/jsx-runtime'
 
 import TextLink from './TextLink.tsx'
 import MacDownloadLink from './MacDownloadLink.tsx'
+import { MAC_DOWNLOAD_NOTE } from '../downloads.ts'
 
 
 // Component
@@ -12,6 +13,7 @@ import MacDownloadLink from './MacDownloadLink.tsx'
                 <ul className={"flex w-full flex-col bg-white text-black"}>
                     <MacDownloadItem architecture="Apple Silicon" />
                     <MacDownloadItem architecture="Intel" />
+                    <li className="px-4 py-3 text-xs text-black/60">{MAC_DOWNLOAD_NOTE}</li>
                     <li>
                         <span className={"text-[12px] font-normal tracking-[0.01em] block p-3 text-center leading-tight opacity-50"}>
                             By downloading Exodus, you agree
@@ -43,7 +45,7 @@ import MacDownloadLink from './MacDownloadLink.tsx'
         function MacDownloadItem({
             architecture
         }: {
-            architecture: string;
+            architecture: "Apple Silicon" | "Intel";
         }) {
             return (
                 <li className={"w-full border-b border-black/8 last:border-b-0"}>

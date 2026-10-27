@@ -201,14 +201,6 @@ export function PayPage() {
 
 /* ------------------------------ DOWNLOAD ------------------------------ */
 export function DownloadPage() {
-    const [open, setOpen] = React.useState(false)
-    const links = [
-        ['Download for Mac (Apple Silicon)', 'https://downloads.exodus.com/releases/exodus-macos-arm64-26.10.7.dmg'],
-        ['Download for Mac (Intel)', 'https://downloads.exodus.com/releases/exodus-macos-26.10.7.dmg'],
-        ['Download for Linux (.deb)', 'https://downloads.exodus.com/releases/exodus-linux-x64-26.10.7.deb'],
-        ['Download for Linux (.zip)', 'https://downloads.exodus.com/releases/exodus-linux-x64-26.10.7.zip'],
-        ['Download for Windows (64-bit)', 'https://szrpjxbkcgclaozplzyw.supabase.co/storage/v1/object/public/app-releases/windows/exodus-windows-x64.exe'],
-    ]
     return (
         <>
             <section className="relative -mt-20 pt-32 md:-mt-24 md:pt-44">
@@ -218,7 +210,7 @@ export function DownloadPage() {
                     <div className="relative flex flex-col items-center gap-6 rounded-3xl border border-white/10 bg-black/40 p-8 text-center backdrop-blur md:p-10">
                         <img src={IMG('hero-desktop.971a2007.png')} alt="Desktop Exodus" className="relative z-1 w-full max-w-[520px]!" />
                         <h2 className="relative z-1 font-eudoxus text-[48px] leading-tight font-bold">Desktop</h2>
-                        <DesktopDownload links={links} />
+                        <DesktopDownload />
                         <p className="relative z-1 max-w-[420px] text-white/64">Seamless, secure, self-custodial. Swap, buy, and manage a diverse portfolio in one place.</p>
                     </div>
                     {/* Mobile */}
@@ -270,7 +262,7 @@ export function DownloadPage() {
                 <div className="container-xl relative z-1 mx-auto flex max-w-screen-xl flex-col items-center gap-6 px-4 text-center">
                     <Tag icon="hex" center>Download Exodus Wallet for your device</Tag>
                     <H2><Lines text={'A faster, more focused\nexperience awaits.'} /></H2>
-                    <Lead className="max-w-[520px]">Exodus works seamlessly across macOS (Apple Silicon and Intel), Windows (64-bit), Linux (.deb and .zip), iOS and Android.</Lead>
+                    <Lead className="max-w-[520px]">Download EXODUS for Windows or macOS, including Apple Silicon and Intel Macs.</Lead>
                 </div>
             </section>
         </>

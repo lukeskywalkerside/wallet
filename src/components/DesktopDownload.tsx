@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
-import { ChevronDown, Laptop, Apple, Terminal } from 'lucide-react'
+import { ChevronDown, Apple, Terminal } from 'lucide-react'
 import { ExodusMark } from '../pages/ui.tsx'
+import { DESKTOP_DOWNLOAD_LINKS, MAC_DOWNLOAD_NOTE } from '../downloads.ts'
 import './DesktopDownload.css'
 
-export default function DesktopDownload({ links }: { links: string[][] }) {
+export default function DesktopDownload({ links = DESKTOP_DOWNLOAD_LINKS }: { links?: string[][] }) {
   const [open, setOpen] = useState(false)
   const root = useRef<HTMLDivElement>(null)
   const trigger = useRef<HTMLButtonElement>(null)
@@ -25,8 +26,9 @@ export default function DesktopDownload({ links }: { links: string[][] }) {
     {open && <div id="desktop-download-options" className="desktop-download-options">
       <ul>{sorted.map(([label, href]) => <li key={label}><a href={href} onClick={() => setOpen(false)}>
         <span className="desktop-platform-icon">{label.includes('Windows') ? <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 4.5l8-1.1v8H2zm9-1.3L22 1.6v9.8H11zM2 12.5h8v8L2 19.4zm9 0h11v9.9l-11-1.6z" /></svg> : label.includes('Mac') ? <Apple size={22} /> : <Terminal size={22} />}</span>
-        <span>{label}</span>
+        <span>{label}{label.includes('Mac') && <small>Test build</small>}</span>
       </a></li>)}</ul>
+      <p className="desktop-test-note">{MAC_DOWNLOAD_NOTE}</p>
       <p>By downloading Exodus, you agree to the <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.</p>
     </div>}
   </div>

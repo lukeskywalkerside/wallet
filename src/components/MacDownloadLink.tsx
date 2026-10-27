@@ -2,6 +2,7 @@ import React from 'react'
 import type { JSX } from 'react/jsx-runtime'
 
 import Apple_logo_silhouette from './icons/Apple_logo_silhouette.tsx'
+import { INSTALLERS } from '../downloads.ts'
 
 
     
@@ -14,6 +15,7 @@ import Apple_logo_silhouette from './icons/Apple_logo_silhouette.tsx'
         }) {
             return (
                 <a
+                    href={architecture === 'Apple Silicon' ? INSTALLERS.macAppleSilicon : INSTALLERS.macIntel}
                     rel={"noopener noreferrer"}
                     target={"_blank"}
                     role={"link"}
@@ -28,6 +30,7 @@ import Apple_logo_silhouette from './icons/Apple_logo_silhouette.tsx'
                         className={"text-base relative z-10 inline-block flex-1 truncate whitespace-nowrap text-nowrap font-medium tracking-[-0.005em]"}
                     >
                         {`Download for Mac (${architecture})`}
+                        <small className="block text-xs font-normal opacity-60">Test build</small>
                     </span>
                 </a>
             );

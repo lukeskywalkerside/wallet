@@ -11,4 +11,8 @@ export const DESKTOP_DOWNLOAD_LINKS = [
     ['Download for Mac (Apple Silicon)', INSTALLERS.macAppleSilicon],
     ['Download for Mac (Intel)', INSTALLERS.macIntel],
 ]
-
+export const MAC_INSTALLER_DESCRIPTIONS: Record<string, string> = {
+    [INSTALLERS.macAppleSilicon]: 'M1 and newer Macs',
+    [INSTALLERS.macIntel]: 'Intel-based Macs',
+}
+export const MAC_INSTALLER_NOTE = 'Mac installers are being refined. You may encounter issues during installation.'

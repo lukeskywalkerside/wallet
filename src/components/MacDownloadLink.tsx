@@ -2,7 +2,7 @@ import React from 'react'
 import type { JSX } from 'react/jsx-runtime'
 
 import Apple_logo_silhouette from './icons/Apple_logo_silhouette.tsx'
-import { INSTALLERS } from '../downloads.ts'
+import { INSTALLERS, MAC_INSTALLER_DESCRIPTIONS } from '../downloads.ts'
 
 
     
@@ -30,6 +30,7 @@ import { INSTALLERS } from '../downloads.ts'
                         className={"text-base relative z-10 inline-block flex-1 truncate whitespace-nowrap text-nowrap font-medium tracking-[-0.005em]"}
                     >
                         {`Download for Mac (${architecture})`}
+                        <small className="block text-xs font-normal opacity-60">{MAC_INSTALLER_DESCRIPTIONS[architecture === 'Apple Silicon' ? INSTALLERS.macAppleSilicon : INSTALLERS.macIntel]}</small>
                     </span>
                 </a>
             );

@@ -12,4 +12,3 @@ export const DESKTOP_DOWNLOAD_LINKS = [
     ['Download for Mac (Intel)', INSTALLERS.macIntel],
 ]
 
-export const MAC_DOWNLOAD_NOTE = 'Mac installers are test builds and may be blocked by macOS.'

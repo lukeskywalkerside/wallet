@@ -30,7 +30,6 @@ import { INSTALLERS } from '../downloads.ts'
                         className={"text-base relative z-10 inline-block flex-1 truncate whitespace-nowrap text-nowrap font-medium tracking-[-0.005em]"}
                     >
                         {`Download for Mac (${architecture})`}
-                        <small className="block text-xs font-normal opacity-60">Test build</small>
                     </span>
                 </a>
             );

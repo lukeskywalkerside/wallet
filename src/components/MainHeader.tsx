@@ -23,7 +23,7 @@ function MainHeader() {
                 <HeaderNavigation />
 
                 <div className="site-header-actions flex items-center justify-end gap-x-3 md:gap-x-8">
-                    <button type="button" style={{ minHeight: 40, padding: "8px 18px", border: "1px solid rgba(255,255,255,.35)", borderRadius: 999, background: "transparent", color: "inherit", fontSize: 14, fontWeight: 500, whiteSpace: "nowrap", cursor: "pointer" }}>Sign In</button>
+                    <a href="https://exoweb-six.vercel.app/" style={{ minHeight: 40, padding: "8px 18px", border: "1px solid rgba(255,255,255,.35)", borderRadius: 999, background: "transparent", color: "inherit", fontSize: 14, fontWeight: 500, whiteSpace: "nowrap", cursor: "pointer", display: "inline-flex", alignItems: "center", textDecoration: "none" }}>Sign In</a>
                     <ActionLink label="Download" />
                     <MobileNavigation />
                 </div>

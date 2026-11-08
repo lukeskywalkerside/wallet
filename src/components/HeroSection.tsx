@@ -11,7 +11,6 @@ import ResponsiveBreak from './ResponsiveBreak.tsx'
 import ActionButton from './ActionButton.tsx'
 import TextLink from './TextLink.tsx'
 import HardwareWalletLink from './HardwareWalletLink.tsx'
-import MacDownloadCard from './MacDownloadCard.tsx'
 
 
 // Component
@@ -97,9 +96,6 @@ function HeroDownload() {
                             target="_self"
                         />
                     </p>
-                </div>
-                <div className="grid transition-all delay-75 duration-[400ms] ease-in-out max-h-96 overflow-hidden absolute left-1/2 -translate-x-1/2 pt-4 w-max top-14 max-h-none pointer-events-none opacity-0 grid-rows-[0fr]">
-                    <MacDownloadCard />
                 </div>
             </div>
         </div>

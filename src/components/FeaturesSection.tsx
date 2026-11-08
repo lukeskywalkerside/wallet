@@ -9,7 +9,6 @@ import HeadingSection from './HeadingSection.tsx'
 import FeatureDescription from './FeatureDescription.tsx'
 import GradientButton from './GradientButton.tsx'
 import FeatureLabel from './FeatureLabel.tsx'
-import MacDownloadCard from './MacDownloadCard.tsx'
 
 
 // Component
@@ -100,10 +99,6 @@ function FeatureBlock({
                         </div>
 
                         <div className={"flex flex-col"}>
-                        </div>
-
-                        <div className={"grid transition-all delay-75 duration-[400ms] ease-in-out max-h-96 overflow-hidden absolute left-1/2 -translate-x-1/2 pt-4 w-max top-14 max-h-none pointer-events-none opacity-0 grid-rows-[0fr]"}>
-                            <MacDownloadCard />
                         </div>
                     </div>
                 ) : buttonTarget === "_blank" ? (

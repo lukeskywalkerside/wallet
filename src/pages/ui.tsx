@@ -228,7 +228,7 @@ export function AllDevices() {
                 <Lead>A faster, more focused experience awaits.</Lead>
                 <Btn icon={<ExodusMark />}>Download Exodus Wallet</Btn>
                 <p className="max-w-[560px] text-sm text-white/48">
-                    Exodus works seamlessly across macOS (Apple Silicon and Intel), Windows (64-bit), Linux (.deb and .zip), iOS and Android.
+                    Download the Windows (64-bit) app, or use the web wallet on your other devices.
                 </p>
             </div>
         </section>

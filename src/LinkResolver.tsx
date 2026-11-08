@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { INSTALLERS } from './downloads.ts'
 
 const EXT = {
     xoramp: 'https://xoramp.com',
@@ -44,9 +43,6 @@ const MAP: Record<string, string> = {
     'download': '/download',
     'get exodus': '/download',
     'download exodus': '/download',
-    'download for mac': '/download',
-    'download for mac (apple silicon)': INSTALLERS.macAppleSilicon,
-    'download for mac (intel)': INSTALLERS.macIntel,
     'available on other devices': '/download',
     'browse assets': '/assets',
     'contact support': '/contact-support',

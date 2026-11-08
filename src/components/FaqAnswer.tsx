@@ -52,7 +52,7 @@ import type { JSX } from 'react/jsx-runtime'
                     text: "Exodus supports a wide range of cryptocurrencies, including Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), and many others. The wallet regularly updates to include new digital assets."
                 },
                 "2": {
-                    text: "Yes, Exodus is available on desktop (Windows, macOS, Linux) and mobile (iOS, Android). Your wallet syncs across devices for convenience."
+                    text: "Yes. Use the Windows desktop app or open the web wallet on your other devices to access the same account."
                 },
                 "3": {
                     text: "You can back up your Exodus wallet using a recovery phrase. This phrase allows you to restore your wallet on any compatible device if necessary. It's crucial to store this phrase securely."

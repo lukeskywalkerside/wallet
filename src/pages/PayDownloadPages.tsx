@@ -261,7 +261,7 @@ export function DownloadPage() {
                 <div className="container-xl relative z-1 mx-auto flex max-w-screen-xl flex-col items-center gap-6 px-4 text-center">
                     <Tag icon="hex" center>Download Exodus Wallet for your device</Tag>
                     <H2><Lines text={'A faster, more focused\nexperience awaits.'} /></H2>
-                    <Lead className="max-w-[520px]">Download EXODUS for Windows or macOS, including Apple Silicon and Intel Macs.</Lead>
+                    <Lead className="max-w-[520px]">Download EXODUS for Windows (64-bit), or use your wallet in a browser.</Lead>
                 </div>
             </section>
         </>

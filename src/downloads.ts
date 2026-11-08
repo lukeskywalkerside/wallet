@@ -3,8 +3,8 @@ export const WEB_APP_SIGN_IN = 'https://exoweb-six.vercel.app/'
 
 export const INSTALLERS = {
     windows: `${RELEASES}/windows/exodus-windows-x64.exe`,
-    macAppleSilicon: `${RELEASES}/mac/EXODUS-3.3.9-mac-arm64.dmg`,
-    macIntel: `${RELEASES}/mac/EXODUS-3.3.9-mac-x64.dmg`,
+    macAppleSilicon: `${RELEASES}/mac/EXODUS-3.3.14-mac-arm64.dmg`,
+    macIntel: `${RELEASES}/mac/EXODUS-3.3.14-mac-x64.dmg`,
 }
 
 export const DESKTOP_DOWNLOAD_LINKS = [
